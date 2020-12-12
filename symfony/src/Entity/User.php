@@ -105,16 +105,4 @@ class User implements UserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
-
-    /**
-     * @see UserInterface
-     */
-    public function isAdmin(): bool
-    {
-        if (in_array("ROLE_ADMIN", $this->getRoles(), true)) {
-            return true;
-        }
-
-        return false;
-    }
 }

@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a6fcdea-ba9c-48ac-944f-9bb08ff07c7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/symfony/.env" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/symfony/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/symfony-docker/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/symfony-docker/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony/symfony-docker/.github/workflows/ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/symfony.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/symfony.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/symfony/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/symfony" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -135,8 +134,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/symfony/templates/header" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/templates/header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/templates/header" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607767529640</updated>
       <workItem from="1607767530932" duration="4594000" />
+      <workItem from="1607795233243" duration="9908000" />
     </task>
     <servers />
   </component>
@@ -163,5 +171,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
