@@ -2,13 +2,11 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
-use App\Repository\UserRepository;
+use App\Entity\Counterparty;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 /**
  * @IsGranted("ROLE_USER")
@@ -20,8 +18,13 @@ class UserController extends AbstractController
      */
     public function index(): Response
     {
+        $entityManager = $this->getDoctrine()->getManager();
+        $counterparties = $entityManager
+                            ->getRepository(Counterparty::class)
+                            ->findBy(['user_id' => $this->getUser()]);
+
         return $this->render('user/index.html.twig', [
-            'controller_name' => 'UserController',
+            'counterparties' => $counterparties,
         ]);
     }
 }

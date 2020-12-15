@@ -18,10 +18,10 @@ class CounterpartyFixtures extends Fixture implements DependentFixtureInterface
             return;
         }
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 1; $i < 11; $i++) {
             $counterparty = new Counterparty();
-            $counterparty->setName("Детксий сад №{$i}");
-            $counterparty->setFullname("МБДОУ Детксий сад №{$i} города Азова");
+            $counterparty->setName("Детский сад №{$i}");
+            $counterparty->setFullname("МБДОУ Детский сад №{$i} города Азова");
             $counterparty->setUserId($user);
             $manager->persist($counterparty);
         }
