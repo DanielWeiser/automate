@@ -26,7 +26,11 @@ class AccessDeniedHandler implements AccessDeniedHandlerInterface
                 return new RedirectResponse('/admin');
             }
 
-            return new RedirectResponse('/');
+            if (in_array("ROLE_USER", $user->getRoles(), true)) {
+                return new RedirectResponse('/');
+            }
+
+            return new RedirectResponse('/logout');
         }
     }
 }

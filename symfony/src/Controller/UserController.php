@@ -15,40 +15,11 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
  */
 class UserController extends AbstractController
 {
-    private $passwordEncoder;
-
-    public function __construct(UserPasswordEncoderInterface $passwordEncoder)
-    {
-        $this->passwordEncoder = $passwordEncoder;
-    }
-
     /**
      * @Route("/", name="index")
      */
     public function index(): Response
     {
-//        $entityManager = $this->getDoctrine()->getManager();
-//
-//        $user = new User();
-//        $user->setUsername("admin");
-//        $user->setPassword($this->passwordEncoder->encodePassword(
-//            $user,
-//            'admin'
-//        ));
-//        $user->setRoles(["ROLE_ADMIN"]);
-//        $entityManager->persist($user);
-//
-//        $user1 = new User();
-//        $user1->setUsername("user");
-//        $user1->setPassword($this->passwordEncoder->encodePassword(
-//            $user1,
-//            'user'
-//        ));
-//        $user1->setRoles(["ROLE_USER"]);
-//        $entityManager->persist($user1);
-//
-//        $entityManager->flush();
-
         return $this->render('user/index.html.twig', [
             'controller_name' => 'UserController',
         ]);

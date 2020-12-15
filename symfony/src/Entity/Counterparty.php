@@ -28,8 +28,8 @@ class Counterparty
     private $fullname;
 
     /**
-     * @ORM\OneToOne(targetEntity=User::class, inversedBy="counterparty", cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\ManyToOne(targetEntity=User::class)
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user_id;
 

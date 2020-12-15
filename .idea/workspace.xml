@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6fcdea-ba9c-48ac-944f-9bb08ff07c7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/custom.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/docker-symfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/docker-symfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/symfony.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/symfony.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +142,8 @@
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/symfony/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/symfony/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lYIK03jZQNyGX29oENLKQ7PFAq" />
@@ -134,7 +156,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/symfony/templates/header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../automate/v2" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -155,6 +177,11 @@
       <updated>1607767529640</updated>
       <workItem from="1607767530932" duration="4594000" />
       <workItem from="1607795233243" duration="9908000" />
+      <workItem from="1607895166228" duration="1776000" />
+      <workItem from="1607939920893" duration="597000" />
+      <workItem from="1607944468705" duration="639000" />
+      <workItem from="1607971825817" duration="5693000" />
+      <workItem from="1608016811984" duration="147000" />
     </task>
     <servers />
   </component>
@@ -172,5 +199,31 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="355" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607979417671">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="687" y="355" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1607979417671" />
+    <state x="663" y="50" width="646" height="1021" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607977554071">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="663" y="50" width="646" height="1021" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607977554071" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608016957935">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1608016957935" />
+    <state x="999" y="359" width="657" height="568" key="NewPhpClassDialog" timestamp="1607972415949">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="999" y="359" width="657" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607972415949" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1607977667128">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607977667128" />
+    <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607979305163">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1607979305163" />
   </component>
 </project>
