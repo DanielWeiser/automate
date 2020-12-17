@@ -22,6 +22,11 @@ class CounterpartyFixtures extends Fixture implements DependentFixtureInterface
             $counterparty = new Counterparty();
             $counterparty->setName("Детский сад №{$i}");
             $counterparty->setFullname("МБДОУ Детский сад №{$i} города Азова");
+            $counterparty->setInn(random_int(6110039640, 6140039640));
+            $counterparty->setKpp(random_int(611001001, 614001001));
+            $counterparty->setOkpo(random_int(21162144, 24162144));
+            $counterparty->setOgrn(random_int(1116188002720, 1136188002720));
+            $counterparty->setAddress(random_int(346780, 646780) . ", Ростовская обл, Азов г, Петровский пер, {$i}");
             $counterparty->setUserId($user);
             $manager->persist($counterparty);
         }

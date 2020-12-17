@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
 <div class="container-fluid">
     <div class="row justify-content-center">
         {% for counterparty in counterparties %}
@@ -10,10 +9,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ counterparty.name }}</h5>
                     <p class="card-text">{{ counterparty.fullname }}</p>
-                </div>
-                <div class="card-body">
-                    <a href="#" class="card-link">Заказ</a>
-                    <a href="#" class="card-link">Информация</a>
+                    <a href="#" class="stretched-link"></a>
                 </div>
             </div>
         {% endfor %}

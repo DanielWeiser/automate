@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\CounterpartyRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -29,9 +31,39 @@ class Counterparty
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class)
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="user", referencedColumnName="id")
      */
-    private $user_id;
+    private $user;
+
+    /**
+     * @ORM\Column(type="bigint", nullable=true)
+     */
+    private $inn;
+
+    /**
+     * @ORM\Column(type="bigint", nullable=true)
+     */
+    private $kpp;
+
+    /**
+     * @ORM\Column(type="bigint", nullable=true)
+     */
+    private $okpo;
+
+    /**
+     * @ORM\Column(type="bigint", nullable=true)
+     */
+    private $ogrn;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $address;
+
+    public function __construct()
+    {
+        $this->contracts = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -62,14 +94,74 @@ class Counterparty
         return $this;
     }
 
-    public function getUserId(): ?User
+    public function getUser(): ?User
     {
-        return $this->user_id;
+        return $this->user;
     }
 
-    public function setUserId(User $user_id): self
+    public function setUser(User $user): self
     {
-        $this->user_id = $user_id;
+        $this->user = $user;
+
+        return $this;
+    }
+
+    public function getInn(): ?int
+    {
+        return $this->inn;
+    }
+
+    public function setInn(?int $inn): self
+    {
+        $this->inn = $inn;
+
+        return $this;
+    }
+
+    public function getKpp(): ?int
+    {
+        return $this->kpp;
+    }
+
+    public function setKpp(?int $kpp): self
+    {
+        $this->kpp = $kpp;
+
+        return $this;
+    }
+
+    public function getOkpo(): ?int
+    {
+        return $this->okpo;
+    }
+
+    public function setOkpo(?int $okpo): self
+    {
+        $this->okpo = $okpo;
+
+        return $this;
+    }
+
+    public function getOgrn(): ?string
+    {
+        return $this->ogrn;
+    }
+
+    public function setOgrn(?string $ogrn): self
+    {
+        $this->ogrn = $ogrn;
+
+        return $this;
+    }
+
+    public function getAddress(): ?string
+    {
+        return $this->address;
+    }
+
+    public function setAddress(?string $address): self
+    {
+        $this->address = $address;
 
         return $this;
     }
