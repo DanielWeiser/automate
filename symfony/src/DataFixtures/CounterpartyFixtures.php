@@ -27,7 +27,7 @@ class CounterpartyFixtures extends Fixture implements DependentFixtureInterface
             $counterparty->setOkpo(random_int(21162144, 24162144));
             $counterparty->setOgrn(random_int(1116188002720, 1136188002720));
             $counterparty->setAddress(random_int(346780, 646780) . ", Ростовская обл, Азов г, Петровский пер, {$i}");
-            $counterparty->setUserId($user);
+            $counterparty->setUser($user);
             $manager->persist($counterparty);
         }
 

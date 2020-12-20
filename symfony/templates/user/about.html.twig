@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="/about/{{ counterparty.id }}">Информация о контрагенте</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Заказы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контракты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Все контрагенты</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row justify-content-center">
+        <div class="card" style="width: 28rem; margin-top: 2rem">
+            <img class="card-img-top" src="{{ asset('images/example.png') }}" alt="Counterparty image">
+            <div class="card-body">
+                <h5 class="card-title">{{ counterparty.name }}</h5>
+                <p class="card-text">{{ counterparty.fullname }}</p>
+                <p class="card-text">ИНН: {{ counterparty.inn }}</p>
+                <p class="card-text">КПП: {{ counterparty.kpp }}</p>
+                <p class="card-text">ОКПО: {{ counterparty.okpo }}</p>
+                <p class="card-text">ОГРН: {{ counterparty.ogrn }}</p>
+                <p class="card-text">Адрес: {{ counterparty.address }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

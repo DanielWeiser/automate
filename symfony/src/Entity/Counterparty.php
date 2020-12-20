@@ -30,8 +30,8 @@ class Counterparty
     private $fullname;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class)
-     * @ORM\JoinColumn(name="user", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="counterparties")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $user;
 

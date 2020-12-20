@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6fcdea-ba9c-48ac-944f-9bb08ff07c7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d23883b-062d-4740-ba7e-35b7d8ef8ed7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d23883b-062d-4740-ba7e-35b7d8ef8ed7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -157,17 +158,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../automate/v2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/symfony/templates" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/templates" />
+      <recent name="$PROJECT_DIR$/symfony/templates/user" />
       <recent name="$PROJECT_DIR$/symfony/src/DataFixtures" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/symfony/templates/header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony" />
       <recent name="$PROJECT_DIR$/symfony/public/images" />
       <recent name="$PROJECT_DIR$/symfony/templates/header" />
     </key>
@@ -190,6 +194,13 @@
       <workItem from="1608059740165" duration="651000" />
       <workItem from="1608060636747" duration="5992000" />
       <workItem from="1608133801209" duration="11082000" />
+      <workItem from="1608239333607" duration="3580000" />
+      <workItem from="1608304017251" duration="635000" />
+      <workItem from="1608304665136" duration="1094000" />
+      <workItem from="1608305773383" duration="1642000" />
+      <workItem from="1608325972906" duration="26000" />
+      <workItem from="1608326012393" duration="4831000" />
+      <workItem from="1608411251057" duration="2777000" />
     </task>
     <servers />
   </component>
@@ -207,55 +218,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="591" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608139671875">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="591" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608139671875" />
-    <state x="687" y="355" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607979417671">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="687" y="355" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1607979417671" />
-    <state x="663" y="50" width="646" height="1021" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608137592838">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="663" y="50" width="646" height="1021" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608137592838" />
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608191680770">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1608191680770" />
-    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1608139805833">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="263" height="500" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1608139805833" />
-    <state x="999" y="359" width="657" height="568" key="NewPhpClassDialog" timestamp="1607972415949">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="999" y="359" width="657" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607972415949" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1607977667128">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1607977667128" />
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1608139381264">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1608139381264" />
-    <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608062138920">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="606" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1608062138920" />
-    <state x="687" y="292" width="618" height="522" key="find.popup" timestamp="1608137687017">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1608137687017" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1608139550934">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1608139550934" />
-    <state x="721" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608138252503">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="721" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608138252503" />
   </component>
 </project>

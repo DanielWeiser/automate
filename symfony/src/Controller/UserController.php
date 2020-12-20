@@ -21,10 +21,31 @@ class UserController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
         $counterparties = $entityManager
                             ->getRepository(Counterparty::class)
-                            ->findBy(['user_id' => $this->getUser()]);
+                            ->findBy(['user' => $this->getUser()]);
 
         return $this->render('user/index.html.twig', [
             'counterparties' => $counterparties,
+        ]);
+    }
+
+    /**
+     * @Route("/about/{id}", name="about")
+     */
+    public function about(int $id): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $counterparties = $entityManager
+            ->getRepository(Counterparty::class)
+            ->findBy(['user' => $this->getUser()]);
+
+        $counterparty = $entityManager->getRepository(Counterparty::class)->find($id);
+
+        if (is_null($counterparty) || !in_array($counterparty, $counterparties, true)) {
+            return $this->redirectToRoute('index');
+        }
+
+        return $this->render('user/about.html.twig', [
+            'counterparty' => $counterparty,
         ]);
     }
 }

@@ -19,7 +19,7 @@ class ContractFixtures extends Fixture implements DependentFixtureInterface
             return;
         }
 
-        $counterparties = $manager->getRepository(Counterparty::class)->findBy(['user_id' => $user]);
+        $counterparties = $manager->getRepository(Counterparty::class)->findBy(['user' => $user]);
 
         foreach ($counterparties as $counterparty) {
             for ($i = 0; $i < random_int(1, 4); $i++) {
@@ -33,7 +33,8 @@ class ContractFixtures extends Fixture implements DependentFixtureInterface
                 $contract->setDate($date);
 
                 $contract->setDescription("Контракт №{$number} от {$date->format('Y-m-d')}");
-                $contract->setCounterpartyId($counterparty);
+                $contract->setCounterparty($counterparty);
+
                 $manager->persist($contract);
             }
         }
