@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/about/{{ id }}">Информация о контрагенте</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/orders/{{ id }}">Заказы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contracts/{{ id }}">Контракты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Все контрагенты</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row justify-content-center">
+
+    </div>
+</div>
+{% endblock %}

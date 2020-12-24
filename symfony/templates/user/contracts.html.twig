@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/about/{{ id }}">Информация о контрагенте</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/orders/{{ id }}">Заказы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/contracts/{{ id }}">Контракты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Все контрагенты</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row justify-content-center">
+        <div id="accordion" style="width: 60rem; margin-top: 2rem">
+            {% for products in contracts %}
+                {% set contract = products[0].contract %}
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-{{ contract.id }}" aria-expanded="false" aria-controls="collapse-{{ contract.id }}">
+                                <p>Контракт №{{ contract.number }} от {{ contract.date|date('Y-m-d') }}</p>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-{{ contract.id }}" class="collapse" data-parent="#accordion">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Наименование товара</th>
+                                    <th scope="col" class="text-center">Цена</th>
+                                    <th scope="col" class="text-center">Количество</th>
+                                    <th scope="col" class="text-center">Осталось</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for product in products %}
+                                    <tr>
+                                        <td class="text-break w-40">{{ product.product.fullname }}</td>
+                                        <td class="text-center w-20">{{ product.price }}</td>
+                                        <td class="text-center w-20">{{ product.quantity }}</td>
+                                        <td class="text-center w-20">{{ product.leftovers }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

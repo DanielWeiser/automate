@@ -24,16 +24,10 @@ class OrdersProduct
     private $product;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Contract::class)
+     * @ORM\ManyToOne(targetEntity=Orders::class)
      * @ORM\JoinColumn(nullable=false)
      */
-    private $contract;
-
-    /**
-     * @ORM\ManyToOne(targetEntity=Order::class)
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $order;
+    private $orders;
 
     /**
      * @ORM\Column(type="float")
@@ -57,26 +51,14 @@ class OrdersProduct
         return $this;
     }
 
-    public function getContract(): ?Contract
+    public function getOrders(): ?Orders
     {
-        return $this->contract;
+        return $this->orders;
     }
 
-    public function setContract(?Contract $contract): self
+    public function setOrders(?Orders $orders): self
     {
-        $this->contract = $contract;
-
-        return $this;
-    }
-
-    public function getOrder(): ?Order
-    {
-        return $this->order;
-    }
-
-    public function setOrder(?Order $order): self
-    {
-        $this->order = $order;
+        $this->orders = $orders;
 
         return $this;
     }

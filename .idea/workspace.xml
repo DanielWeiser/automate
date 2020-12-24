@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6fcdea-ba9c-48ac-944f-9bb08ff07c7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d23883b-062d-4740-ba7e-35b7d8ef8ed7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d23883b-062d-4740-ba7e-35b7d8ef8ed7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,21 +156,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/symfony/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cms/opencart-module" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/symfony/templates" />
-      <recent name="$PROJECT_DIR$/symfony/templates/user" />
-      <recent name="$PROJECT_DIR$/symfony/src/DataFixtures" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/symfony/templates/header" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/src/Form" />
       <recent name="$PROJECT_DIR$/symfony" />
       <recent name="$PROJECT_DIR$/symfony/public/images" />
+      <recent name="$PROJECT_DIR$/symfony/templates/header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/symfony/src/DataFixtures" />
+      <recent name="$PROJECT_DIR$/symfony/templates/user" />
+      <recent name="$PROJECT_DIR$/symfony/templates" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/symfony/templates/header" />
     </key>
   </component>
@@ -201,6 +200,14 @@
       <workItem from="1608325972906" duration="26000" />
       <workItem from="1608326012393" duration="4831000" />
       <workItem from="1608411251057" duration="2777000" />
+      <workItem from="1608497971011" duration="107000" />
+      <workItem from="1608498098458" duration="5439000" />
+      <workItem from="1608559102626" duration="54000" />
+      <workItem from="1608582107517" duration="6012000" />
+      <workItem from="1608625606187" duration="6000" />
+      <workItem from="1608645028008" duration="20000" />
+      <workItem from="1608665803444" duration="9430000" />
+      <workItem from="1608759942609" duration="4987000" />
     </task>
     <servers />
   </component>
@@ -218,5 +225,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608761127108">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1608761127108" />
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1608797418437">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="311" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1608797418437" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1608666971259">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1608666971259" />
+    <state x="687" y="292" width="801" height="522" key="find.popup" timestamp="1608760989909">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="687" y="292" width="801" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1608760989909" />
   </component>
 </project>
