@@ -44,6 +44,11 @@ class ContractProduct
      */
     private $leftovers;
 
+    public function __toString(): string
+    {
+        return $this->contract . ' ' . $this->product;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

@@ -3,14 +3,16 @@
 namespace App\DataFixtures;
 
 use App\Entity\Contract;
+use App\Entity\ContractProduct;
 use App\Entity\Counterparty;
 use App\Entity\Orders;
+use App\Entity\OrdersProduct;
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class OrdersFixtures extends Fixture implements DependentFixtureInterface
+class RemoveEmptyOrdersFixture extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
@@ -25,11 +27,14 @@ class OrdersFixtures extends Fixture implements DependentFixtureInterface
             $contracts = $manager->getRepository(Contract::class)->findBy(['counterparty' => $counterparty]);
 
             foreach ($contracts as $contract) {
-                for ($i = 0; $i < random_int(5, 15); $i++) {
-                    $orders = new Orders();
-                    $orders->setContract($contract);
+                $orders = $manager->getRepository(Orders::class)->findBy(['contract' => $contract]);
 
-                    $manager->persist($orders);
+                foreach ($orders as $order) {
+                    $ordersProduct = $manager->getRepository(OrdersProduct::class)->findBy(['orders' => $order]);
+
+                    if (empty($ordersProduct)) {
+                        $manager->remove($order);
+                    }
                 }
             }
         }
@@ -40,7 +45,7 @@ class OrdersFixtures extends Fixture implements DependentFixtureInterface
     public function getDependencies()
     {
         return [
-            ContractFixtures::class,
+            OrdersProductFixtures::class,
         ];
     }
 }

@@ -108,15 +108,15 @@ class UserController extends AbstractController
         }
 
         foreach ($orders as $order) {
-            $products = $em->getRepository(OrdersProduct::class)->findBy(['orders' => $order]);
+            $orderProducts = $em->getRepository(OrdersProduct::class)->findBy(['orders' => $order]);
 
-            if (empty($products)) {
+            if (empty($orderProducts)) {
                 continue;
             }
 
-            $products[] = $products;
+            $products[] = $orderProducts;
         }
-        var_dump($products); die();
+        dump($products); die();
 
         return $this->render('user/orders.html.twig', [
             'orders' => $products,

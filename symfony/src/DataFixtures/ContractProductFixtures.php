@@ -27,7 +27,7 @@ class ContractProductFixtures extends Fixture implements DependentFixtureInterfa
             $contracts = $manager->getRepository(Contract::class)->findBy(['counterparty' => $counterparty]);
 
             foreach ($contracts as $contract) {
-                for ($i = 0; $i < random_int(0, count($products)); $i++) {
+                for ($i = 0; $i < random_int(2, count($products)); $i++) {
                     $contractProduct = new ContractProduct();
                     $contractProduct->setContract($contract);
                     $contractProduct->setProduct($products[$i]);

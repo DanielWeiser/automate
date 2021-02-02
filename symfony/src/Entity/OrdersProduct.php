@@ -34,6 +34,11 @@ class OrdersProduct
      */
     private $quantity;
 
+    public function __toString(): string
+    {
+        return $this->product.' '.$this->orders;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

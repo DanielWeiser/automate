@@ -60,6 +60,11 @@ class Counterparty
      */
     private $address;
 
+    public function __toString(): string
+    {
+        return $this->name;
+    }
+
     public function __construct()
     {
         $this->contracts = new ArrayCollection();

@@ -109,6 +109,8 @@
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/webimpress/safe-writer" />
       <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/pagerfanta/pagerfanta" />
+      <excludeFolder url="file://$MODULE_DIR$/symfony/vendor/easycorp/easyadmin-bundle" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

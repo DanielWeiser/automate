@@ -32,18 +32,21 @@ class OrdersProductFixtures extends Fixture implements DependentFixtureInterface
 
                 foreach ($orders as $order) {
                     for ($i = 0; $i < random_int(1, count($contractProducts)); $i++) {
+                        $contractProduct = $contractProducts[$i];
+
+                        if (0 === (int)$contractProduct->getLeftovers()) {
+                            continue;
+                        }
+
                         $ordersProduct = new OrdersProduct();
                         $ordersProduct->setOrders($order);
-                        $ordersProduct->setProduct($contractProducts[$i]->getProduct());
-
-                        $quantity = random_int(1, $contractProducts[$i]->getLeftovers());
+                        $ordersProduct->setProduct($contractProduct->getProduct());
+                        $quantity = random_int(1, $contractProduct->getLeftovers());
                         $ordersProduct->setQuantity($quantity);
-
-                        //TODO понять почему происходит неправильное отнятие остатков
-                        $contractProducts[$i]->setLeftovers($contractProducts[$i]->getLeftovers() - $quantity);
+                        $contractProduct->setLeftovers($contractProduct->getLeftovers() - $quantity);
 
                         $manager->persist($ordersProduct);
-                        $manager->persist($contractProducts[$i]);
+                        $manager->persist($contractProduct);
                     }
                 }
             }

@@ -38,6 +38,11 @@ class Contract
      */
     private $description;
 
+    public function __toString(): string
+    {
+        return $this->number;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
